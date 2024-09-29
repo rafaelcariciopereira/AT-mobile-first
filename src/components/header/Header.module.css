@@ -1,0 +1,29 @@
+header {
+    position: inherit; 
+    top: 0;
+    width: 100%;
+    background-color: #282c34;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 8px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em; 
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+  

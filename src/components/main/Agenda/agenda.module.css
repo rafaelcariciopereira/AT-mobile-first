@@ -1,0 +1,58 @@
+.agendaContainer {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .gridContainer {
+    display: flex;
+    flex-direction: column; /* Por padrão, os eventos serão em coluna */
+    gap: 20px; /* Espaço entre os eventos */
+  }
+  
+  /* Estilo para cada evento */
+  .evento {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .data {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .descricao {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Para telas maiores */
+  @media (min-width: 768px) {
+    .gridContainer {
+      flex-direction: row; /* Muda para linha em telas maiores */
+      flex-wrap: wrap; /* Permite que os eventos se movam para a próxima linha */
+      justify-content: flex-start; /* Alinha os eventos à esquerda */
+    }
+  
+    .evento {
+      flex: 1 0 45%; /* Cada evento ocupará cerca de 45% da largura */
+      margin: 10px; /* Espaço entre os eventos */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .evento {
+      flex: 1 0 30%; /* Cada evento ocupará cerca de 30% da largura */
+    }
+  }
+  
