@@ -2,7 +2,7 @@ import Biografia from "./Biografia";
 import Propostas from "./Propostas";
 import ListaProp from "./Propostas/list";
 import Agenda from "./Agenda";
-import Footer from "./Footer";
+import FormularioContato from "./Contato";
 
 const Main = () =>{
     const imagem = "https://blacktie.com.br/wp-content/uploads/2020/11/WAL4302-800x1000.jpg.webp";
@@ -61,12 +61,20 @@ const Main = () =>{
 
 
     return(
-        <>
+        <>  
+            <section id="Biografia"> 
             <Biografia imagem={imagem} texto= {texto}/>
+            </section>
+            <section id="Propostas">
             <Propostas listaObj={listaObj}/>
             <ListaProp lista={listaObj}/>
+            </section>
+            <section id="Agenda">
             <Agenda eventos={eventos}/>
-            <Footer/>
+            </section>
+            <section id="Contato">         
+            <FormularioContato />
+            </section>
         </>
     );
 }

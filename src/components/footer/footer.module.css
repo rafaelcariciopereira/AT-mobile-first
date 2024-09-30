@@ -1,0 +1,45 @@
+.footer {
+    background-color: #fcd40bde;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.contactInfo {
+    flex: 1 1 50%;
+    margin: 5px; 
+}
+
+.socialLinks {
+    flex: 1 1 50%;
+    margin: 5px; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.socialLinks a {
+    margin: 0 10px; 
+    text-decoration: none; 
+    color: black; 
+}
+
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .contactInfo, .socialLinks {
+        flex-basis: 100%; 
+        text-align: center; 
+    }
+}

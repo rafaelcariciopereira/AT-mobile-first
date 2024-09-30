@@ -16,7 +16,7 @@ const Evento = ({ evento }) => {
 const Agenda = ({ eventos }) => {
   return (
     <div className={style.agendaContainer}>
-      <h2 className={style.h2}>Próximos Eventos de Campanha</h2>
+      <h2 className={style.h2}>Agenda</h2>
       <div className={style.gridContainer}>
         {eventos.map((evento, index) => (
           <Evento key={index} evento={evento} />

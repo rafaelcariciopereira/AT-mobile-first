@@ -5,7 +5,9 @@ const Biografia = ({imagem , texto}) =>{
         <>
             <div className={styles.content}>
                 <img  className={styles.img} src={imagem} alt="candidato" />
+                <div className={styles.cardTexto}> 
                 <p className={styles.p}>{texto}</p>
+                </div>
             </div>
         </>
     );
