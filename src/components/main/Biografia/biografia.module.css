@@ -1,46 +1,48 @@
-
-.img{
-    width: 100%;
-    height: 30vh;
-    border-bottom:2px solid #ff0000;
-    object-fit: cover;
+.img {
+  width: 100%; /* Ocupa 100% da largura do container */
+  border-bottom: 2px solid #ff0000;
+  object-fit: cover; /* Cobre o espaço do container mantendo a proporção */
+  display: block; /* Remove espaço em branco embaixo da imagem */
+  margin: 0 auto;
 }
 
 .content {
-    width: 100%; 
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-.p{
-    max-width: 80%; 
-    line-height: 1.5; 
-    color: black;
-    margin: 20px auto;
-    text-align: center; 
+.p {
+  max-width: 80%;
+  line-height: 1.5;
+  color: black;
+  margin: 20px auto;
+  text-align: center;
 }
 
-.cardTexto{
-    background-color: #fcd40bde;
-    border: 2px solid #ff0000;
-    margin-top: 20px;
+.cardTexto {
+  background-color: #fcd40bde;
+  border: 2px solid #ff0000;
+  margin-top: 20px;
 }
-
 
 /* 768px (tablet) */
 @media (min-width: 768px) {
-    .img{
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-    }
-    .content{
-        flex-direction: row; 
-        justify-content: flex-start;
-    }
-    .p{
-        max-width: 50%;
-        line-height: 1.5;
-        font-size: 1.3em;
-    }
-    
+  .img {
+    width: 100%;
+    object-fit: cover;
   }
+  .content {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .p {
+    max-width: 50%;
+    line-height: 1.5;
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img {
+  }
+}

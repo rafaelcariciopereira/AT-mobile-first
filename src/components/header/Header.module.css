@@ -1,40 +1,36 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: #fcd40bde;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    border-bottom: 2px solid #ff0000; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    flex-direction: column; 
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fcd40bde;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid #ff0000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
 }
 
-  
 header h1 {
-    margin: 8px;
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    color: #008C45;  
+  margin: 8px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #008c45;
 }
 
-nav{
-    margin-top: 10px;
+nav {
+  margin-top: 10px;
 }
 
 nav a {
-    margin: 0 10px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 1em; 
+  margin: 0 10px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1em;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
-
-
-  
